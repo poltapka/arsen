@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --text-color: rgb(255, 5, 159);
+  --background-color: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url("fff.webp") no-repeat center;
+  background-size: cover;
+  color: white;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+li a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+li a:hover {
+  background-color: var(--text-color);
+}
+
+.active {
+  background-color: var(--text-color);
+}
+
+button {
+  border: 2px solid var(--text-color);
+  background: transparent;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--text-color);
+  color: black;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 70vh;
+}
+
+.home-container {
+  max-width: 600px;
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#explorer {
+  margin-left: 10px;
+}
+#girlfriend-discord-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  width: 300px;
+  z-index: 1000; /* Поверх других элементов */
+}
+
+#girlfriend-discord-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+#girlfriend-discord-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(164, 164, 164);
+  cursor: pointer;
+}
